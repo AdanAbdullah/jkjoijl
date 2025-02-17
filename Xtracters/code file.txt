@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Introduction</title>
+    <style>
+        /* Your existing CSS styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('3.png'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #8dd1ff;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.7); 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); 
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #007acc;
+            padding: 20px 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-image {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            border: 2px solid #ffffff; 
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: xx-large;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        }
+
+        h2 {
+            color: #007acc;
+            font-size: 25px;
+            margin-top: 20px;
+            border-bottom: 2px solid #007acc; 
+            padding-bottom: 5px;
+        }
+
+        p, ul {
+            color: #524949;
+            margin: 10px 0;
+        }
+
+        dt {
+            font-size: larger;
+            color: #034d7e;
+            text-decoration: underline;
+            text-decoration-color: #afdcfb;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin: 0 0 20px 0; 
+        }
+
+        a {
+            color: #007acc;
+            text-decoration: none; 
+            transition: color 0.3s; 
+        }
+
+        a:hover {
+            color: #005f8d; 
+        }
+
+        marquee {
+            margin-top: 20px;
+            color: #0f202b;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function colorChange() {
+            const strongElements = document.querySelectorAll('strong');
+            const bElements = document.querySelectorAll('b');
+            
+            
+            const backgroundColors = ['#ffffcc', '#ccffcc', '#ffccff', '#ccffff', '#ffcccc']; 
+            const textColors = ['#ff3333', '#3333ff', '#3300cc', '#ff9900', '#cc00cc']; 
+
+        
+            strongElements.forEach((el, index) => {
+                el.style.backgroundColor = backgroundColors[index % backgroundColors.length];
+                el.style.color = textColors[index % textColors.length];
+                el.style.borderRadius = '5px';
+            });
+
+            
+            bElements.forEach((el, index) => {
+             el.style.backgroundColor = backgroundColors[(index + strongElements.length) % backgroundColors.length];
+            el.style.color = textColors[(index + strongElements.length) % textColors.length];
+            el.style.borderRadius = '5px'; 
+            });
+        }
+        
+    </script>
+</head>
+<body>
+    <marquee scrollamount="15" style="color: #0f202b;">Note: Please click on<strong id="myName"
+         onclick="colorChange()"> Adan Abdullah</strong></marquee>
+    <div class="container">
+        <div class="header">
+            <h1><u>Welcome to my Introduction Page</u></h1>
+            <img src="4.png" alt="My Photo" class="profile-image">
+        </div>
+        
+        <section>
+            <h2>About Me</h2>
+            <dl>
+                <dt>My Name</dt>
+                <dd>My name is <strong id="myName" onclick="colorChange()">Adan Abdullah</strong>.</dd>
+
+                <dt>Age</dt>
+                <dd>My age is <strong>15</strong>. I was born in <strong>Lahore</strong>.</dd>
+
+                <dt>My City</dt>
+                <dd>I live in <strong>Lahore</strong>, the second biggest city of Pakistan.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>My Education</h2>
+            <dl>
+                <dt>My Education</dt>
+                <dd>I completed my <strong>Matriculation</strong> from the Lahore board by 
+                    <strong>Al-Noor Academy</strong>.</dd>
+
+                <dt>My Marks</dt>
+                <dd>I got <strong>93%</strong> in 9th, <strong>85%</strong> in 10th, and
+                     <strong>150/150</strong> in computer.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>My Hobbies</h2>
+            <p>I don’t have a specific hobby, but I enjoy learning HTML, CSS, JavaScript, Java, and SQL from 
+            <a href="https://www.youtube.com/user/learncodeacademy" target="_blank">YouTube</a>, 
+            <a href="https://www.w3schools.com" target="_blank">W3Schools</a>, and 
+            <a href="https://www.sqlcourse.com" target="_blank">SQLCourse</a>.</p>
+        </section>
+
+        <section>
+            <h2>Matriculation Result Link</h2>
+            <a href="https://result.biselahore.com/ResultPart2.aspx" target="_blank">
+                <img src="2.png" alt="My result photo" style="width: 200px; height: 150px;
+                 border: 2px solid #007acc; border-radius: 5px; transition: transform 0.3s;">
+            </a>
+            <u><a href="2.png" target="_blank"><p style="color: #007acc;">Click the image above to view my 
+                matriculation result and here to see the picture.</p></a></u>
+        </section>
+    </div>
+
+    <marquee behavior="scroll" direction="left" scrollamount="15">
+        Note: Sir I have taken some help to make this webpage from Chatgpt for error finding and do somethings that
+         I was not able to do but I know how to use these tags and what work do each perform and I used the java 
+         script with a help of friend.
+    </marquee>
+</body>
+</html>

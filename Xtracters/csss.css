@@ -1,0 +1,399 @@
+@media screen and (max-width: 1200px) {
+  .sliderImg {
+    width: 600px;
+    height: 600px;
+  }
+
+  .SliderTitle, .SliderTitle2 {
+    font-size: 45px;
+    right: 10%;
+  }
+
+  .sliderPrice {
+    font-size: 45px;
+  }
+
+  .gallery {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 15px 30px;
+  }
+
+  .navItem .search {
+    width: 200px;
+  }
+
+  .sliderImg {
+    width: 400px;
+    height: 400px;
+  }
+
+  .SliderTitle, .SliderTitle2 {
+    font-size: 35px;
+    right: 5%;
+  }
+
+  .sliderPrice {
+    font-size: 35px;
+  }
+
+  .buybutton {
+    padding: 20px;
+    font-size: 20px;
+    right: 85%;
+  }
+
+  .Advantages {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .Advantages div {
+    padding: 20px 30px;
+    width: calc(50% - 40px);
+    margin: 10px;
+  }
+
+  .para {
+    font-size: 18px;
+  }
+
+  .Brand_Name {
+    transform: scale(1.5);
+  }
+
+  .Shoesimages {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .img_shoes {
+    width: 250px;
+  }
+
+  .selling_shoe_img {
+    width: 45%;
+  }
+
+  .About_Product {
+    width: 45%;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  .navTop {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navItem {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .limitedOffer {
+    font-size: 18px;
+  }
+
+  .navBottom {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .menuItem {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .slider {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  }
+
+  .sliderWrapper {
+    height: auto;
+  }
+
+  .sliderImg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .SliderTitle, .SliderTitle2 {
+    font-size: 24px;
+    top: 30%;
+    right: 5%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sliderPrice {
+    font-size: 24px;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    padding: 10px;
+  }
+
+  .buybutton {
+    padding: 15px;
+    font-size: 16px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 75%;
+  }
+
+  .sideBg {
+    width: 350px;
+    height: 350px;
+  }
+
+  .Advantages {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Advantages div {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .definition-lists {
+    padding: 20px;
+  }
+
+  .definition-lists dl {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  dd {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .selling {
+    height: auto;
+    padding: 50px 20px;
+    clip-path: none;
+  }
+
+  .selling_shoe_img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .About_Product {
+    position: relative;
+    width: 100%;
+    top: auto;
+    right: auto;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .galleryItem {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .newSeason {
+    flex-direction: column;
+  }
+
+  .nsImg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .nsItem {
+    padding: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footerLeft {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footerMenu {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .footerRight {
+    padding: 20px;
+    align-items: center;
+  }
+
+  .fInput {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navItem img {
+    width: 120px;
+  }
+
+  .limitedOffer {
+    font-size: 14px;
+  }
+
+  .sliderImg {
+    width: 200px;
+    height: 200px;
+  }
+
+  .SliderTitle, .SliderTitle2 {
+    font-size: 20px;
+    top: 25%;
+  }
+
+  .sliderPrice {
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .buybutton {
+    padding: 10px;
+    font-size: 14px;
+    top: 70%;
+  }
+
+  .sideBg {
+    width: 250px;
+    height: 250px;
+  }
+
+  .Brand_Name {
+    transform: scale(1.2);
+    padding: 50px 10px;
+  }
+
+  .Advantages div {
+    padding: 15px;
+  }
+
+  .para {
+    font-size: 16px;
+  }
+
+  .payment {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .cardinfo {
+    flex-direction: column;
+  }
+
+  .sm {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .payButton {
+    font-size: 14px;
+  }
+
+  .colors, .sizes {
+    justify-content: center;
+  }
+
+  .productbutton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fMenuTitle {
+    font-size: 14px;
+  }
+
+  .fList {
+    font-size: 12px;
+  }
+
+  .fInput {
+    width: 90%;
+  }
+
+  .fIcons {
+    justify-content: center;
+  }
+
+  .fIcons img {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
+
+/* Fix payment modal on small screens */
+@media screen and (max-height: 700px) {
+  .payment {
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
+/* Additional fixes for very small devices */
+@media screen and (max-width: 320px) {
+  .sliderImg {
+    width: 150px;
+    height: 150px;
+  }
+
+  .buybutton {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .menuItem {
+    font-size: 12px;
+    margin: 3px;
+  }
+
+  .Brand_Name {
+    transform: scale(1);
+  }
+}
